@@ -1,4 +1,12 @@
 $(document).ready(function(){
+
+    function textColor(){
+        var color = ["yellow", "#00ff22", "ff0066","red"]
+        var index = Math.floor(Math.random()*3);
+        document.getElementsByClassName('text')[0].style.color = color[index];  
+    }
+    setInterval(textColor, 200);
+
     $(".ig li").eq(0).show().siblings().hide();
     var i = 0;
     var timer;
@@ -12,6 +20,7 @@ $(document).ready(function(){
                 i= 0;
             }
             show();
+           
         },3000);
     }
     

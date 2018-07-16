@@ -1,0 +1,126 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+.w{
+	width: 1200px;
+	margin: 0px auto;
+}
+.warrper{
+	background-image: linear-gradient(to top,#fff,yellow);
+	height: 130px;
+	border-bottom: 1px dashed #aaa;
+}
+.warrper .nav{
+	height: 30px;
+	margin-top: 20px;
+}
+.warrper .nav .nav_list li{
+	height: 30px;
+	float: left;
+}
+.warrper .nav .nav_list li a{
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px; 
+}
+.content{
+	/* position: relative; */
+	height: 300px;
+	margin-top: 20px;
+	/* background-color: red; */
+}
+.content .login{
+	position: relative;
+	float: left;
+	text-align: center;
+	width: 25%;
+	height: 300px;
+	background-color: yellow;
+	border-radius: 20px;
+}
+.content .login p{
+	margin-top: 30px;
+	font-size: 20px;
+	font-weight: 600;
+	font-family: "微软雅黑";
+}
+.content .login p input{
+	border-radius: 5px;
+	height: 20px;
+}
+.login .register{
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: block;
+	width: 50px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border: 1px solid #00ff66;
+}
+.content .sowing{
+	border-radius: 20px;
+	overflow: hidden;
+	float: left;
+	width: 600px;
+	height: 300px;
+	background-color: #666;
+	text-align: center;
+}
+.content .sowing .sowing_box{
+	position: relative;
+	width: 3000px;
+	height: 300px;
+}
+.content .sowing_box ul li{
+	float: left;
+	width: 600px;
+	height: 300px;
+}
+.content .sowing ul li img{
+	width: 600px;
+	height: 300px;
+}
+.content .sowing .dot{
+	position: absolute;
+	bottom: 20px;
+	left: 100px;
+	width: 400px;
+	height: 20px;
+	/* background-color: #000; */
+}
+.content .sowing .dot li{
+	background-color: #666;
+	float: left;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 20px;
+	margin-left: 40px;
+}
+.content .sowing .dot .color{
+	background-color: #007788;
+}
+.content .classInfo{
+	border-radius: 20px;
+	float: left;
+	width: 25%;
+	height: 300px;
+	background-color: #00ffff;
+	text-align: center;
+}
+.content .classInfo ul li{
+	margin: 20px auto;
+	background-color: #335533;
+	border-radius: 5px;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+}

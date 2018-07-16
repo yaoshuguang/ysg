@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>启慧幼儿园</title>
+	<link rel="stylesheet" href="kindergarten.css">
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="kindergarten.js"></script>
+</head>
+<body>
+	<div class="warrper">
+		<div class="logo w">
+			<a href="#" title="启慧"><h1>启慧幼儿园</h1></a>
+		</div>
+		<div class="address w">
+			<p>地址: 河北省衡水市景县北留智镇中心大街西走500米 <a href="map.html">[地址]</a></p>
+			<p>电话: </p>
+		</div>
+		<div class="nav w">
+			<ul class="nav_list">
+				<li><a href="#" title="">首页</a></li>
+				<li><a href="#" title="">中心概况</a></li>
+				<li><a href="#" title="">上学报名</a></li>
+				<li><a href="#" title="">信息大厅</a></li>
+				<li><a href="#" title="">育儿宝典</a></li>
+				<li><a href="#" title="">老师信息</a></li>
+				<li><a href="#" title="">招聘信息</a></li>
+				<li><a href="#" title="">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content w">
+		<!-- 登录 -->
+		<div class="login">
+			<br>
+			<form action="login.php" method="post" accept-charset="utf-8">
+				<h1>用户登录</h1>
+			<p >
+				<span style="display: inline-block; width: 70px">用户名:</span>
+				<input type="text" name="user" placeholder="手机号/邮箱"></p>
+			<p>
+				<span style="display: inline-block; width: 70px">密  码:</span>
+				<input type="password" name="password">
+			</p>
+			<p>
+			    <input type="submit" name="login" value="登录">
+                <input type="reset" name="reset" value="重置">
+                
+            </p>
+            <a class="register" href="register/register.html" title="注册">注册</a>
+			</form>
+			
+		</div>
+		<!-- 轮播图 -->
+		<div class="sowing">
+			<div class="sowing_box">
+				<ul>
+					<li><img src="image/1.jpg" alt=""></li>
+					<li><img src="image/2.jpg" alt=""></li>
+					<li><img src="image/3.jpg" alt=""></li>
+					<li><img src="image/4.jpg" alt=""></li>
+					<li><img src="image/5.jpg" alt=""></li>
+				</ul>
+				<ul class="dot">
+				<li class="color">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+			</div>
+			<div class="leftBtn btn"><</div>
+			<div class="rightBtn btn">></div>
+			
+		</div>
+		<!-- 班级信息 -->
+		<div class="classInfo">
+			<h1>班级列表</h1>
+			<ul>
+				<li>小班</li>
+				<li>中班</li>
+				<li>大班</li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>

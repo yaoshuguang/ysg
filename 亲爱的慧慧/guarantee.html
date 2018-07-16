@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>保证书</title>
+	<link rel="stylesheet" type="text/css" href="guarantee.css">
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		
+			function textColor(){
+        	var color = ["yellow", "#00ff22", "ff0066","red"]
+       		var index = Math.floor(Math.random()*4);
+        	document.getElementsByTagName('h1')[0].style.color = color[index]; 
+        	var p = document.getElementsByTagName('p');
+        	for(var i = 0; i <p.length; i++){
+        		p[i].style.color = color[index];  
+        	}
+        	
+    		}
+    		setInterval(textColor, 200);	
+	</script>
+</head>
+<body>
+	<div class="love">
+		<div class="top"><h1>I love you</h1></div>
+		<img src="image/love-1.jpg" alt="">
+		<p>我在沉思，顺便自恋一下，看看我的美照，美美的</p>
+		<img src="image/love-2.jpg" alt="">
+		<p>看看我之前的美照，回忆一下，嘿嘿嘿</p>
+		<img src="image/love-3.jpg" alt="">
+		<p>见证我们的爱情，手拉手，一起走，一直到白首。</p>
+	</div>
+</body>
+</html>
