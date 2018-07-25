@@ -1,0 +1,29 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#form_reg{
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+#form_reg input{
+	width: 300px;
+	height: 40px;
+	border-radius: 25px;
+	margin-top: 25px;
+	padding-left: 10px;
+}
+
+#form_reg .verification{
+	width: 200px;
+}
+.obtain_ver{
+	width: 100px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #fff;
+	border: 1px solid #888;
+	text-align: center;
+	line-height: 40px;
+}

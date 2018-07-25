@@ -53,7 +53,7 @@
 }
 .login .register{
 	position: absolute;
-	bottom: 20px;
+	bottom: 10px;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -78,12 +78,12 @@
 	width: 3000px;
 	height: 300px;
 }
-.content .sowing_box ul li{
+.content .sowing_box .sow li{
 	float: left;
 	width: 600px;
 	height: 300px;
 }
-.content .sowing ul li img{
+.content .sowing .sow li img{
 	width: 600px;
 	height: 300px;
 }
@@ -104,7 +104,9 @@
 	text-align: center;
 	line-height: 20px;
 	margin-left: 40px;
+	cursor: pointer;
 }
+
 .content .sowing .dot .color{
 	background-color: #007788;
 }
@@ -124,3 +126,32 @@
 	height: 30px;
 	line-height: 30px;
 }
+.r_content{
+	height: 400px;
+	border: 1px solid #888;
+	text-align: center;
+}
+.r_content table{
+	width: 800px;
+	background-color: #ddd;
+	height: 180px;
+	margin: 0 auto;
+}
+.r_content table tr{
+	height: 30px;
+	width: 800px;
+	border: 1px solid #fff;
+}
+.r_content table tr td{
+	height: 30px;
+	border: 1px solid #666;
+
+}
+.active-nick{
+            color:red;
+}
+.bottom{
+	height: 500px;
+}
+
+

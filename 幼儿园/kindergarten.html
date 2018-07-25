@@ -6,7 +6,9 @@
 	<title>启慧幼儿园</title>
 	<link rel="stylesheet" href="kindergarten.css">
 	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="angular.min.js"></script>
 	<script type="text/javascript" src="kindergarten.js"></script>
+
 </head>
 <body>
 	<div class="warrper">
@@ -34,20 +36,22 @@
 		<!-- 登录 -->
 		<div class="login">
 			<br>
-			<form action="login.php" method="post" accept-charset="utf-8">
+			<form ng-app="myApp" ng-controller= "validateCtrl" name ="myForm" novalidate action="#" method="post" accept-charset="utf-8" id="login">
 				<h1>用户登录</h1>
 			<p >
 				<span style="display: inline-block; width: 70px">用户名:</span>
-				<input type="text" name="user" placeholder="手机号/邮箱"></p>
-			<p>
-				<span style="display: inline-block; width: 70px">密  码:</span>
-				<input type="password" name="password">
+				<input type="text" name="user" ng-model="user" required placeholder="用户名/手机号/邮箱">
 			</p>
 			<p>
-			    <input type="submit" name="login" value="登录">
+				<span style="display: inline-block; width: 70px">密  码:</span>
+				<input id="pwd" type="password" name="password"><button class="hs" onclick="hs()">显示</button>
+			</p>
+			<p>
+			    <input type="button" name="login" onclick="login()" value="登录">
                 <input type="reset" name="reset" value="重置">
                 
             </p>
+            <a href="seek/seek.html">找回密码</a>
             <a class="register" href="register/register.html" title="注册">注册</a>
 			</form>
 			
@@ -55,7 +59,7 @@
 		<!-- 轮播图 -->
 		<div class="sowing">
 			<div class="sowing_box">
-				<ul>
+				<ul class="sow">
 					<li><img src="image/1.jpg" alt=""></li>
 					<li><img src="image/2.jpg" alt=""></li>
 					<li><img src="image/3.jpg" alt=""></li>
@@ -63,15 +67,14 @@
 					<li><img src="image/5.jpg" alt=""></li>
 				</ul>
 				<ul class="dot">
-				<li class="color">1</li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-				<li>5</li>
-			</ul>
+					<li class="color">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+				</ul>
 			</div>
-			<div class="leftBtn btn"><</div>
-			<div class="rightBtn btn">></div>
+			
 			
 		</div>
 		<!-- 班级信息 -->
@@ -84,6 +87,92 @@
 			</ul>
 		</div>
 	</div>
-	
+	<hr>
+	<div class="ranking w">
+		<div class="r_content w">
+			<table cellspacing="0">
+				<caption><h1>幼儿园班级排名前10</h1></caption>
+				<thead>
+					<tr>
+						<th>小班</th>
+						<th>中班</th>
+						<th>大班</th>
+					</tr>
+				</thead>
+				<tbody class="rank_content">
+					<tr>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="r_list ">
+			<button type= "button" data_page='' class="r_first">首页</button>
+			<button class="r_prov">上一页</button>
+			<span class="numberBtn"></span>
+			<button class="r_next">下一页</button>
+			<button class="r_last">尾页</button>
+			<input type="text" name="" style="width:70px" class="r_number" placeholder="请输入页码">
+			<button type="buttom" class="r_determine">确定</button>
+		</div>
+	</div>
+	<hr>
+	<div style="height: 10px;background-color: #0066dd">
+		
+	</div>
+	<div class="bottom w">
+		<form id="form2" action="#" method="post" accept-charset="utf-8">
+			<input type="text">
+			<p class="re"></p>
+			<input type="button" onclick="test">
+		</form>
+	</div>
 </body>
 </html>
